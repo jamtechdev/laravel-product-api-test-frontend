@@ -13,6 +13,7 @@ function App(props) {
   const [loginEmail, setLoginEmail] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
   const handleInputChange = (e) => {
+    console.log(process.env.BASE_URL)
     const { id, value } = e.target;
     // eslint-disable-next-line default-case
     switch (id) {
