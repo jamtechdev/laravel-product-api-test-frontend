@@ -26,7 +26,7 @@ function Product() {
   };
   useEffect(() => {
     axios
-      .get('http://127.0.0.1:8000/api/products', {
+      .get(`${process.env.BASE_URL}/api/products`, {
         headers: headers
       })
       .then((response) => {

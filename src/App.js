@@ -48,7 +48,7 @@ function App(props) {
     };
 
     axios
-      .post('http://127.0.0.1:8000/api/register', data, {
+      .post(`${process.env.BASE_URL}/api/register`, data, {
         headers: headers
       })
       .then((response) => {
@@ -68,7 +68,7 @@ function App(props) {
     };
 
     axios
-      .post('http://127.0.0.1:8000/api/login', data, {
+      .post(`${process.env.BASE_URL}/api/login`, data, {
         headers: headers
       })
       .then((response) => {
